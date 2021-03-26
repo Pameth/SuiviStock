@@ -1,0 +1,6 @@
+RewriteEngine On
+
+
+RewriteRule ^index$ index.php
+RewriteRule ^accueil$ accueil.php
+RewriteRule ^ajoutProduit$ src/view/ajoutProduit.php

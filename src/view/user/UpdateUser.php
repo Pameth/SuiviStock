@@ -1,0 +1,86 @@
+<?php 
+  include_once '../../../header.php';
+  include_once '../../model/user/UpdateUserDB.php';
+?>
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <title> Update User</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost/mes_cours/liagegda/suivistock/public/css/style.css">
+  
+ </head>
+ <body>
+  <div class="col-3">
+        <a href="http://localhost/mes_cours/liagegda/suivistock/src/view/user/ReadUser.php"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">List User &emsp; <i class="fa fa-list-alt" aria-hidden="true"></i></button></a>
+  </div>
+  <div class="container">
+    <form action="../../model/user/UpdateUserDB.php" method="post">
+      
+          <div class="alert alert alert-primary" role="alert">
+        <h4 class="text-primary text-center">Update User</h4>
+      </div>
+    <hr>
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" 
+             class="form-control" 
+             id="nom" 
+             name="nom" 
+             aria-describedby="nom" 
+             value="<?=$row['nom'] ?>"
+               required>
+      </div>
+      <div class="form-group">
+        <label for="prenom">Prenom</label>
+        <input type="text" 
+             class="form-control" 
+             id="prenom"
+             name="prenom"  
+             aria-describedby="prenom" 
+             value="<?=$row['prenom'] ?>"
+               required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" 
+             class="form-control" 
+             id="email" 
+             name="email" 
+             value="<?=$row['email'] ?>"
+               required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" 
+             class="form-control" 
+             id="password" 
+             name="password" 
+             value="<?=$row['password'] ?>"
+               required>
+      </div>
+      <div class="form-group">
+        <label for="etat">Etat</label>
+        <input type="number" 
+             id="etat" 
+             max="1" 
+             min="0"
+             name="etat" 
+             value="<?=$row['etat'] ?>"
+             required>
+            <input type="text" 
+            name="id"
+            value="<?=$row['id']?>"
+            hidden >
+      </div>
+      <button type="submit" 
+            class="btn btn-primary"
+            name="update">Update</button>
+    </form>
+  </div>
+  
+ </body>
+ </html>
+<?php 
+  include_once '../../../footer.php';
+ ?>

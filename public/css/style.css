@@ -1,0 +1,60 @@
+.container{
+	min-height: 45vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container form {
+	padding-top: 10px;
+	width: 550px;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container h4{
+	color: black;
+}
+.container span{
+	text-align: right;
+}
+.container span i{
+	text-align: left;
+}
+.accueil a{
+	margin-top: 10px;
+	margin-left: 10px;
+	box-shadow: 2px 2px 5px #888888;
+}
+.form{
+	padding-top: 10px;
+	width: 550px;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.search{
+	height: 40px;
+	float:right;
+	margin-right: 50px;
+}
+.rounded{
+	width: 100px;
+}
+#overlay{
+	background: #ffffff;
+	color: #666666;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 5000;
+	top: 0;
+	left: 0;
+	float: left;
+	text-align: center;
+	padding-top: 25%;
+	opacity: 0.80;
+}
+.form-group select{
+	text-align: right;
+}
